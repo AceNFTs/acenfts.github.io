@@ -1,0 +1,59 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: #fdfbf9;
+  color: #222;
+}
+
+header {
+  background: #000;
+  color: white;
+  padding: 3rem 1rem;
+  text-align: center;
+  font-family: 'Unica One', cursive;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.nft-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding: 1rem;
+  text-align: center;
+}
+
+.nft-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.buy-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #4e00ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #eee;
+}
+
+.socials a {
+  color: #444;
+  margin: 0 0.5rem;
+}
