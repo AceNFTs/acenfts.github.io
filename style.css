@@ -5,6 +5,20 @@ body {
   color: #222;
 }
 
+.slogan {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-top: 2rem;
+  font-family: 'Georgia', serif;
+  font-weight: 400;
+}
+
+.slogan p:nth-child(3) {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
 header {
   background: #000;
   color: white;
