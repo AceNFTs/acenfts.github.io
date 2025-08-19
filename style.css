@@ -85,3 +85,71 @@ footer {
 .gallery img:hover {
   transform: scale(1.05);
 }
+/* Navigation Bar */
+.navbar {
+  background: #111;
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.hamburger {
+  font-size: 26px;
+  cursor: pointer;
+  display: none; /* hidden on desktop */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #aaa;
+}
+
+/* Mobile menu */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* show on mobile */
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+
