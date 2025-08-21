@@ -43,6 +43,15 @@ header {
   text-align: center;
 }
 
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+/* Offset for sticky header when jumping to sections */
+section {
+  scroll-margin-top: 80px; /* adjust if your header is taller/shorter */
+}
+
 .nft-card img {
   width: 100%;
   border-radius: 8px;
